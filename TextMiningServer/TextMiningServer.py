@@ -10,7 +10,7 @@ app = Flask(__name__)
 dic2 = {}
 
 @app.route("/")
-def frequency(): # 내부 IP 또는 도메인(DDNS):내부 포트 또는 외부 포트/인자
+def frequency(): # 내부 IP 또는 도메인(DDNS):내부 포트 또는 외부 포트 / 인자
     
     body = request.args.get('name',"")
     word = request.args.get('word',"")
