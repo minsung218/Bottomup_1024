@@ -52,15 +52,15 @@ def get_tags(text, ntags, word): # 추출한 텍스트에서 명사를 분리&�
     nouns = spliter.nouns(text) # noun 메소드(기능)로 text에서 명사만 분리&추출
                                 # 그리고 그걸 순환가능한 객체로 저장
                                 
-    count = Counter(nouns) #분리 및 추출한 명사 빈도 계산
+    count = Counter(nouns) # 분리 및 추출한 명사 빈도 계산
     
-    return_str = "" # 계산한 빈도수를 저장하기 위해 스트링 변수 선언
+    return_str = "" # 명사와 계산한 빈도수를 저장하기 위해 스트링 변수 선언
 
     dic = {}
     
     for n, c in count.most_common(ntags): #입력받은 인자 ntags(정수)만큼 count
                                           #에 저장되어 있는 명사를 빈도수 큰거
-                                          #부터 반환함. n는 명사, c는 빈도수
+                                          #부터 반환함. n은 명사, c는 빈도수
         
         if len(n)!=1 and len(n)!=0:
             if word in n:
