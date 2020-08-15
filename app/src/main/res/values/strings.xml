@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application_practice</string>
+    <string name="app_label">My Application_practice</string>
+    <string name="search_hint">검색어를 입력하세요</string>
+</resources>
